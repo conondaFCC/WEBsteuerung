@@ -1,4 +1,4 @@
-# WEBsteuerung
+# WEB Steuerung
 Schulprojekt für das Fach WEB.
 
 Die Ordnerstruktur erklärt:
