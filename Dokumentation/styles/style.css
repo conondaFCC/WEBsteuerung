@@ -1,0 +1,29 @@
+/* CSS comments work like JAVA Blockcommnets =) */
+
+html {
+  font-size: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* good Tutorial on CSS https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics */
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+  }
