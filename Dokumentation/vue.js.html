@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vue.js</title>
+  </head>
+  <body>
+    <h1>vue.js</h1>
+    <h2>Einführung Vue</h2>
+<p>
+  <li>
+    Beste Informationsresource zu Vue unter http://vuejs.org/v2/guide/<
+  </li>
+  <li>
+    Tipp: Um vue code auszuprobieren empfiehlt sich die Seite codepen.io
+  </li>
+</p>
+<h3>Was ist Vue?</h3>
+Vue (View) ist ein progressives Framework um Benutzerschnittellen zu erstellen.
+
+<h2>die fünf wichtigsten Vue-Direktiven</h2>
+<h3>Vorrausseztung zum verwenden von vue v-Direktiven</h3>
+<ul>
+  Um die v-direktiven zu verwenden muss folgendes zuerst gemacht werden.
+<li>
+Code einfügen in html:
+ <pre>
+   <code>
+  &lt;code>&lt;script src="https://unpkg.com/vue">&lt;/script>
+</code>
+</pre>
+</li>
+<li>
+Zudem muss im html ein Tag mittels ID gekennzeichnet sein.
+<pre>
+<code>
+  &lt;div id="ID-Name">
+
+</code>
+</pre>
+</li>
+
+<li>
+
+  Standard vue.js
+  <pre>
+    <code>
+      var Var-Name = new Vue({
+        el: '#ID-Name',
+        data: {
+          message: 'Hello Vue!'
+        }
+      })
+    </code>
+  </pre>
+  el steht für Element
+  Data ist das Standardobjekt in welchem nun Attributte definiert werden können oder
+  weitere Objekte oder Funktionen abgelegt werden.
+</li>
+
+</ul>
+
+
+<table>
+  <thead>
+<th>
+  Direktive
+</th>
+<th>
+Beschreibung der Dirktive mit Beispielen
+</th>
+<tr>
+  <td>{{ElementattributeName}}</td>
+  <td>innerhalb eines div Tag mit Elements kann der Inhalt eines Element attribute in HTML anzeigen</td>
+</tr>
+    </thead>
+
+<tr>
+<td>
+  v-bind:attribut ="wert"
+</td>
+<td>
+Bsp. v-bind:title
+</td>
+</tr>
+
+v-bind
+</table>
+
+codepen vue aktivieren
+<img src="images/codepen-vue.png" alt="Screenshot Einstellung codepen Javascript
+">
+
+  </body>
+</html>
