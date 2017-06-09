@@ -3,8 +3,9 @@ Schulprojekt für das Fach WEB.
 
 Die Ordnerstruktur erklärt:
 * Webseite > enthält aktuelles Projekt. Innerhalb werden die Ordner gemäss Vorgabe von Mozilla angelegt und verwaltet. https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/Dealing_with_files
-* Dokumentation > enthält die gesamte Dokumentation zum Projekt
-* Tests > enthält diverse Webseiten Versuche
+* Dokumentation > enthält die gesamte Dokumentation zum Projekt (neu ist die Doku direkt ins Webprojekt integriert)
+* Tests > enthält diverse html Versuche
 
 Link README https://i20100.github.io/WEBsteuerung/
-Link Dokumentation https://i20100.github.io/WEBsteuerung/Dokumentation/WEB-Dokumentation(HM_VM).html
+Link Startseite Projekt WEB: https://i20100.github.io/WEBsteuerung/Webseite/index.html
+Link Dokumentation Projekt WEB: https://i20100.github.io/WEBsteuerung/Webseite/webdoku.html
