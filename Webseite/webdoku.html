@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title> WEB Dokumentation </title>
+  <!-- Bootstrap-CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Style Elemente für welche CSS gelten, werden im head definiert. Was heisst das? Siehe body {} oder folgende Klassen Definition -->
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Navigation ein-/ausblenden</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-brand">WEB-Projekt</div>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Login</a></li>
+          <li><a href="steuerunghabte.html">Home Automation</a></li>
+          <li><a href="log.html">Logfile</a></li>
+          <li class="active"><a href="webdoku.html">WEB Dokumentation</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <center>
+
+    <br><br><br>
+    <h1>WEB Dokumentation Projekt Steuerung</h1>
+    <h2>Einführung </h2>
+    <p>
+      Dieses Projekt soll uns die Möglichkeit geben eine eigene Idee umsetzen.
+    </p>
+    <h2>Konzept</h2>
+    <p>
+      Webauftritt mit drei Seiten erstellen:
+      <br>
+      Login
+      <br>
+      Steuerung Verbraucher
+      <br>
+      Log Verbraucher
+      <br></p>
+      <h3>UX Design und Seitenbeschrieb</h3>
+      <p>Workshop UX Design in der Gruppe durchgeführt und auf eine Design Variante
+        geeinigt.</p>
+
+        <h4>Seite 1 - Login</h4>
+        <p>
+          <p>
+            Login Seite mit Benutzer Authentifizerung. Um die Komplexität zu reduzieren wird
+            die Benutzerauthentifizeirung nur lokal vorgenommen und nicht via
+            Facebook-Account oder eigener Account-Management Lösung realisiert.
+          </p>
+          <img src="images/Designpage1.png" alt="Design Seite eins">
+          <p>
+            Da wir JavaScript etwas angeschaut haben Benutzen wir JavaScript Befehle um vom
+            Benutzer den Namen und ein Passwort abzufragen. Diese Daten speichern wir dann nur
+            für die Benutzung im Log Seite 3.
+          </p>
+        </p>
+        <h4>Seite 2 - Steuerung Verbraucher</h4>
+        <p>
+          <p>Auf der zweiten Seite, dem Herzstück, sollen die elektrischen Vebraucher
+            mittels einer interaktiven Steuerung einzelne Devices ein- und ausschalten können.</p>
+            <img src="images/Designpage2.png" alt="Design Seite zwei">
+          </p>
+          <h4>Seite 3 - Log Verbraucher</h4>
+          <p>
+            <p>Auf der letzten Seite, sollten die gemachten Einstellungen der Devices in einer Tabelle dargestellt werden.</p>
+            <img src="images/Designpage3.png" alt="Design Seite drei">
+          </p>
+        </p>
+
+        <h3>Organisation</h3>
+        <h4>Journal</h4>
+        <p>
+          Das Journal wird durch die Git Commits geführt. Das bedeutet die Kommentare sollen
+          entsprechend genügend Informationen enthalten. <br>
+          <a href="https://github.com/i20100/WEBsteuerung/commits/master">Link zu den Git Commits</a>
+        </p>
+        <h4>Ordnerstruktur</h4>
+        <p>
+          <table>
+            <thead>
+              <th>Ordner</th>
+              <th>Unterordner</th>
+              <th>Dateien</th>
+              <th>Beschreibung</th>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>//Webverzeichnis</td>
+                <td>/images</td>
+                <td>.jpg, usw.</td>
+                <td>Ablage aller Bilder welche verwendet werden.</td>
+              </tr>
+              <tr>
+                <td>//Webverzeichnis</td>
+                <td>/styles</td>
+                <td>.css</td>
+                <td>Stylesheets zur Formatierung der Seiten werden hier abgelegt.</td>
+              </tr>
+              <tr>
+                <td>//Webverzeichnis</td>
+                <td></td>
+                <td>.html, usw.</td>
+                <td>Die hmtl Dateien, sprich die Seiten werden direkt im
+                  Webverzeichnis abgelegt. <br>Best Practice? Ein Ordner für html
+                  im //Webverzeichnis?</td>
+                </tr>
+              </tbody>
+            </table>
+          </p>
+
+          <h2>Fazit (Technisch und Teamwork)</h2>
+          <p>
+            Dieser Abschnit beschreibt kurz wer für welchen Bereich zuständig war.<br>
+            <table>
+              <thead>
+                <tr>
+                  <th>Habte</th>
+                  <th>Vincent</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>
+                  Habte: Seiteninhalt html und Buttons JavaScript
+                </td>
+                <td>
+                  Vincent: NavBar via Bootstrap <br>
+                  Gemäss Anleitung: http://holdirbootstrap.de/komponenten/#navbar
+                </td>
+              </tr>
+            </table>
+          </p>
+          <p>Optional wenn Zeit reicht:<br>
+            local storage zu benutzen mit JSON.stringify('JS-Object') zum umwandeln
+            von JavaScript-Objekt zu einem String JSON.parse(localStorage.item)
+            zum umwandeln eines Item's zurück zu einem JavaScript-Objekt.
+          </p>
+
+          <h3>Bootstrap</h3>
+          <p>
+            Für die implementierung von Bootstrap wurde die "Inverted NavBar" Standardkonfiguration
+            von folgenden diesem <a href="http://getbootstrap.com/components/#navbar-inverted">Link</a> verwendet.
+            Für die Seiten Home Automation, Logfile und WEB Dokumentation liess sich das Template verwenden.
+            Bei der Seite Log (index.html) welche als erste Seite aufgerufen werden sollte und als
+            Login-Seite dient, liess sich das Bootstraptemplate nicht implementieren ohne
+            das der JavaScript Code, welcher für die aktuelle Loginautenthifizierung verantwortlich ist, nicht mehr ausgeführt wird.
+            Aus diesem Grund konnte das Design nicht auf allen Seiten angewendet werden.
+            <br>
+            <img src="images/FehlerLogin.png" alt="Fehler Login als Bild" height="50%"; width="50%";>
+          </p>
+
+
+
+          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Theorie zu lang=" " Tag
+          </button>
+          <div class="collapse" id="collapseExample">
+            <div class="well">
+              <p>
+                Theorie was der Code <code> &lt;html lang="de"> </code> bewirkt.
+                Dieser html Tag Abschnitt bestimmt ob Google Chrome vorschlägt die Seite zu
+                übersetzen. Beispiel aktuelle Seite WEB Dokumentation.<br>
+                <img src="images/langde.png" alt="Zeigt Übersetzungsvorschlag von Chrome" height="50%"; width="50%";>
+              </p>
+            </div>
+          </div>
+
+        </center>
+        <!-- Bootstrap-JavaScript
+        ================================================== -->
+        <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      </body>
+      </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title> WEB Dokumentation </title>
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <style>
+  h1.mitRand {
+    border: solid black 2px;
+  }
+  </style>
+  <!-- Style Elemente für welche CSS gelten, werden im head definiert. Was heisst das? Siehe body {} oder folgende Klassen Definition -->
+</head>
+
+<body>
+  <h1>WEB Dokumentation Projekt Steuerung</h1>
+  <h2>Einführung </h2>
+  <p>
+    <!-- Beschreibung Projektidee -->
+  </p>
+  <h2>Konzept</h2>
+  <p>
+    Website mit drei Seiten:
+    <ul>
+      <li>Login</li>
+      <li>Steuerung Verbraucher</li>
+      <li>Log Verbraucher</li>
+    </ul>
+  </p>
+
+  <h3>UX Design</h3>
+  <p>Workshop UX Design in der Gruppe durchgeführt und auf eine Design Variante
+     geeinigt.</p>
+    <p>Skizzen der Seiten 1-3</p>
+    <img src="images/Designpage1.png" alt="Design Seite eins"><br><br>
+    <img src="images/Designpage2.png" alt="Design Seite zwei"><br><br>
+    <img src="images/Designpage3.png" alt="Design Seite drei">
+
+    <h3>Seite 1 - Login</h3>
+    <p>
+      <p>
+        Login Seite mit Benuzter Authentifizerung. Um die Komplexität zu reduzieren wird
+        die Benutzerauthentifizeirung nur lokal vorgenommen und nicht via
+        Facebook-Account oder eigener Account-Management Lösung realisiert.
+      </p>
+
+      <p>
+        Da wir JavaScript etwas angeschaut haben Benutzen wir JavaScript Befehle um vom
+        Benutzer den Namen und ein Passwort abzufragen. Diese Daten speichern wir dann nur
+        für die Benutzung im Log Seite 3.
+      </p>
+
+    </p>
+    <h3>Seite 2 - Steuerung Verbraucher</h3>
+    <p>
+
+    </p>
+    <h3>Seite 3 - Log Verbraucher</h3>
+    <p>
+
+    </p>
+    <h3>Organisation</h3>
+    <h4>Journal</h4>
+    <p>
+      Das Journal wird durch die Git Commits geführt. Das bedeutet die Kommentare sollen
+      entsprechend genügend Informationen enthalten. <br>
+      <a href="https://github.com/i20100/WEBsteuerung/commits/master">Link zu den Git Commits</a>
+    </p>
+    <h4>Ordnerstruktur</h4>
+
+    <p>
+      <table>
+        <thead>
+          <th>Ordner</th>
+          <th>Unterordner</th>
+          <th>Dateien</th>
+          <th>Beschreibung</th>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>//Webverzeichnis</td>
+            <td>/images</td>
+            <td>.jpg, usw.</td>
+            <td>Ablage aller Bilder welche verwendet werden.</td>
+          </tr>
+          <tr>
+            <td>//Webverzeichnis</td>
+            <td>/styles</td>
+            <td>.css</td>
+            <td>Stylesheets zur Formatierung der Seiten werden hier abgelegt.</td>
+          </tr>
+          <tr>
+            <td>//Webverzeichnis</td>
+            <td></td>
+            <td>.html, usw.</td>
+            <td>Die hmtl Dateien, sprich die Seiten werden direkt im
+              Webverzeichnis abgelegt. <br>Best Practice? Ein Ordner für html
+              im //Webverzeichnis?</td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+
+      <h3>vue.js für erste Seite anwenden</h3>
+      <p>
+        ressource fürs nachschlagen von vue: http://vuejs.org/v2/guide/ <br>
+      </p>
+      <h2>Fazit (Technisch und Teamwork)</h2>
+      <p>
+        Hier muss noch Text rein!!<br>
+        <ul>
+          <li>
+            vincent möchte die Seitenmenu's schreiben bzw. Nav-Bar erstlelen <br>
+            Gemäss Anleitung: http://holdirbootstrap.de/komponenten/#navbar
+          </li>
+          <li>
+            Habte schreibt die Seiten und Buttons
+          </li>
+        </ul>
+      </p>
+      <p>
+        schön wäre noch local storage zu benutzen mit
+        JSON.stringify('JS-Object') zum umwandeln von JavaScript-Objekt zu einem String
+        JSON.parse(localStorage.item) zum umwandeln eines Item's zurück zu einem JavaScript-Objekt
+      </p>
+
+      <h3>Bootstrap</h3>
+      <p>
+        Bsp. der verwendeten Basisbootstrap Konfiguration in Aktion.
+        Folge diesem Link: https://i20100.github.io/WEBsteuerung/Tests/navbar.html
+        Mehr oder weniger konnte dafür das template von
+        <a href="http://holdirbootstrap.de/examples/starter-template/">hier</a>
+        verwendet werden.<br>
+        Für die Seiten Home Automation und Logfile liess sich das Template verwenden.
+        Bei der Seite Log welche als erste Seite aufgerufen werden soll und als
+        Login-Seite dient, liess sich das Bootstraptemplate nicht implementieren ohne
+        das der JavaScript Code nicht mehr ausgeführt wird.
+        <br>
+        <img src="images/FehlerLogin.png" alt="Fehler Login als Bild" height="50%"; width="50%";>
+      </p>
+    </body>
